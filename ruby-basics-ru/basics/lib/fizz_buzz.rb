@@ -5,8 +5,8 @@ def fizz_buzz(start, stop)
   
   return if start > stop
   
-  res << start.upto(stop) do |num|
-    if (num % 3).zero? && (num % 5).zero?
+  start.upto(stop) do |num|
+    res << if (num % 3).zero? && (num % 5).zero?
       'FizzBuzz'
     elsif (num % 3).zero?
       'Fizz'
