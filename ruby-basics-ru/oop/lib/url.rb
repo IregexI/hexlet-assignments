@@ -1,3 +1,6 @@
+require 'uri'
+require 'forwardable'
+
 class Url
   include Comparable
   extend Forwardable
