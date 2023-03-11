@@ -1,0 +1,27 @@
+= form_with model: @task do |form|
+  div
+    = form.label :name
+  br
+  = form.text_field :name
+  div
+    = form.label :description
+  br
+  = form.text_field :description
+  div
+    = form.label :status
+  br
+  = form.text_field :status
+  div
+    = form.label :creator
+  br
+  = form.text_field :creator
+  div
+    = form.label :performer
+  br
+  = form.text_field :performer
+  div
+    = form.label :completed
+  br
+  = form.text_field :completed
+  div
+    = form.submit
